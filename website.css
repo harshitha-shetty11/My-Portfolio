@@ -1,0 +1,118 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #343a40; /* Dark text color */
+}
+.section-heading {
+    font-weight: 700; /* Bold */
+    color: #212529; /* Even darker heading color */
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+.section-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px; /* Slightly wider underline */
+    height: 4px; /* Slightly thicker underline */
+    background-color: #007bff; /* Blue accent color */
+    border-radius: 9999px;
+}
+.card {
+    background-color: #ffffff;
+    border-radius: 0.75rem; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Slightly more prominent shadow */
+    padding: 1.75rem; /* Increased padding */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-7px); /* Slightly more lift effect on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
+}
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem; /* Slightly larger buttons */
+    border-radius: 0.5rem;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+    font-weight: 500;
+}
+.btn:hover {
+    transform: translateY(-2px);
+}
+.btn.bg-blue-700:hover { background-color: #0056b3; }
+.btn.bg-gray-700:hover { background-color: #333; }
+.btn.bg-green-600:hover { background-color: #28a745; }
+
+
+.project-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600; /* Bolder link text */
+    transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+}
+.project-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Animation for certificate cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.certificate-card-animated > div { /* Apply animation to direct children of certificate-card-animated */
+    animation: fadeInUp 0.5s ease-out forwards;
+    opacity: 0; /* Start invisible */
+}
+.certificate-card-animated > div:nth-child(1) { animation-delay: 0.1s; }
+.certificate-card-animated > div:nth-child(2) { animation-delay: 0.2s; }
+.certificate-card-animated > div:nth-child(3) { animation-delay: 0.3s; }
+.certificate-card-animated > div:nth-child(4) { animation-delay: 0.4s; }
+.certificate-card-animated > div:nth-child(5) { animation-delay: 0.5s; }
+.certificate-card-animated > div:nth-child(6) { animation-delay: 0.6s; }
+
+
+/* Tech Stack specific styling (updated for tag-like display) */
+.tech-tag {
+    display: inline-block;
+    background-color: #e0e7ff; /* Lighter blue background for tags */
+    color: #2a4365; /* Darker blue text */
+    padding: 0.5rem 1rem; /* Increased padding for tags */
+    border-radius: 0.5rem; /* Slightly more rounded corners for tags */
+    margin: 0.4rem; /* Increased margin for better spacing */
+    font-size: 0.95rem; /* Slightly larger font size */
+    font-weight: 600; /* Bolder text for tags */
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.tech-tag:hover {
+    background-color: #c3daff; /* Slightly darker background on hover */
+    color: #1a202c; /* Even darker text on hover */
+}
+
+/* Ensure consistent border-bottom for list items in sections like education and certificates */
+.card .border-b {
+    border-color: #e9ecef; /* Lighter border color */
+}
+
+/* Image styling */
+.rounded-full {
+    object-fit: cover; /* Ensures image covers the area without distortion */
+}
+
+/* Footer link colors */
+footer a {
+    color: #adb5bd; /* Lighter gray for footer links */
+}
+footer a:hover {
+    color: #ffffff; /* White on hover for footer links */
+}
