@@ -1,267 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Naga Harshitha GadamSetty - Resume</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Inter', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #fff;
-            color: #222;
-            font-size: 0.91em;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 32px;
-            background: #fff;
-            box-shadow: 0 0 8px rgba(0,0,0,0.08);
-        }
-        .main-name {
-            font-size: 1.45em;
-            font-weight: 700;
-            margin-bottom: 0.18em;
-            color: #222;
-        }
-        .contact-block {
-            font-size: 0.91em;
-            color: #333;
-            margin-bottom: 0.18em;
-        }
-        .contact-block span {
-            margin-right: 10px;
-        }
-        .contact-location {
-            font-size: 0.89em;
-            color: #555;
-            margin-bottom: 0.45em;
-        }
-        .divider {
-            border: none;
-            border-top: 1.5px solid #bbb;
-            margin: 8px 0 18px 0;
-        }
-        h1, h2, h3 {
-            margin-bottom: 8px;
-        }
-        h1 {
-            font-size: 2em;
-            color: #111;
-        }
-        h2 {
-            font-size: 1.27em;
-            border-bottom: 1px solid #eee;
-            margin-top: 28px;
-            padding-bottom: 3px;
-        }
-        .contact {
-            margin-bottom: 24px;
-        }
-        .contact a {
-            color: #1d4ed8;
-            text-decoration: none;
-        }
-        .section {
-            margin-bottom: 24px;
-        }
-        .tech-list, .cert-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px 16px;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0 40px;
-            margin-bottom: 10px;
-        }
-        .skills-grid ul {
-            list-style: disc inside;
-            padding-left: 18px;
-        }
-        .skills-grid li {
-            margin-bottom: 7px;
-            font-size: 0.91em;
-        }
-        .skills-grid b {
-            font-weight: bold;
-        }
-        .skills-grid .note {
-            font-size: 0.95em;
-            color: #555;
-            font-weight: 600;
-        }
-        @media (max-width: 700px) {
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        .tech-list li {
-            background: #e0e7ff;
-            color: #1e293b;
-            padding: 4px 12px;
-            border-radius: 6px;
-            font-size: 1em;
-        }
-        .project {
-            margin-bottom: 16px;
-        }
-        .project-title {
-            font-weight: bold;
-            font-size: 1em;
-        }
-        .cert-list li {
-            margin-bottom: 7px;
-            font-size: 0.91em;
-        }
-        @media print {
-            body, .container {
-                box-shadow: none;
-                margin: 0;
-                padding: 0;
-            }
-            .container {
-                padding: 0 0 0 0;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Naga Harshitha GadamSetty - Resume</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: 'Inter', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        color: #222;
+        font-size: 0.91em;
+    }
+    .container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 32px;
+        background: #fff;
+        box-shadow: 0 0 8px rgba(0,0,0,0.08);
+    }
+    .main-name {
+        font-size: 1.45em;
+        font-weight: 700;
+        margin-bottom: 0.18em;
+        color: #222;
+    }
+    .contact-block {
+        font-size: 0.98em;
+        margin-bottom: 0.1em;
+    }
+    .contact-block a {
+        color: #1d4ed8;
+    }
+    .contact-links a {
+        color: #1d4ed8;
+        text-decoration: underline;
+    }
+    .contact-location {
+        font-size: 0.98em;
+        color: #555;
+        margin-bottom: 0.3em;
+    }
+    .divider {
+        border: none;
+        border-top: 2px solid #888;
+        margin: 6px 0 18px 0;
+    }
+    h2 {
+        font-size: 1.27em;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 3px;
+        margin-top: 28px;
+        margin-bottom: 8px;
+    }
+    .section {
+        margin-bottom: 24px;
+    }
+    .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 40px;
+    }
+    .skills-grid ul {
+        list-style: disc inside;
+        padding-left: 18px;
+    }
+    .skills-grid li {
+        margin-bottom: 7px;
+    }
+    @media (max-width: 700px) {
+        .skills-grid { grid-template-columns: 1fr; }
+    }
+    .project-list-fixed {
+        list-style: disc inside;
+        padding-left: 18px;
+        margin: 0;
+    }
+    .project-list-fixed li {
+        margin-bottom: 18px;
+    }
+    .cert-list {
+        list-style: disc inside;
+        padding-left: 18px;
+        margin: 0;
+    }
+    .cert-list li {
+        margin-bottom: 8px;
+    }
+    .achievement-list,
+    .lang-list {
+        list-style: disc inside;
+        padding-left: 18px;
+        margin: 0;
+    }
+    .achievement-list li {
+        margin-bottom: 12px;
+        line-height: 1.5em;
+    }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="main-name" style="margin-bottom: 0.2em;">NAGA HARSHITHA GADAMSETTY</h1>
-        <div class="contact-block" style="font-size: 0.98em; margin-bottom: 0.1em;">
-            Phone: <a href="tel:9346004775">+91 9346004775</a>,
-            e-mail: <a href="mailto:harshushetty1206@gmail.com">harshushetty1206@gmail.com</a>
-        </div>
-        <div class="contact-links" style="margin-bottom: 0.1em;">
-            <a href="https://www.linkedin.com/in/harshitha-gadamshetty-b37966319" style="color:#1d4ed8; text-decoration:underline;">linkedin</a> |
-            <a href="https://www.google.com/search?q=harshitha-shetty11" style="color:#1d4ed8; text-decoration:underline;">Github</a>
-        </div>
-        <div class="contact-location" style="font-size:0.98em; margin-bottom: 0.3em;">Andhra Pradesh, India.</div>
-        <hr class="divider" style="border: none; border-top: 2px solid #888; margin: 6px 0 18px 0;" />
-        <div class="section">
-            <h2>SKILLS</h2>
-            <div class="skills-grid">
-                <ul>
-                    <li>Programming language: <b>Python, Java, C</b></li>
-                    <li>Web Technologies: <b>HTML, CSS, Javascript</b></li>
-                    <li>Web Development Tools: <b>Django, Github</b></li>
-                    <li>Data Visualization: <b>Power BI</b></li>
-                    </ul>
-                <ul>
-                    <li>Database Management: <b>MySQL, MongoDB</b></li>
-                    <li>Operating Systems: <b>Windows</b></li>
-                    <li>Cloud Platforms: <b>AWS</b></li>
-                    <li>Service Management: <b>ServiceNow</b></li>
-                </ul>
-            </div>
-        </div>
-        <hr class="divider" style="border: none; border-top: 2px solid #888; margin: 6px 0 18px 0;" />
-        <div class="section">
-            <h2>PROJECTS</h2>
-            <ul class="project-list-fixed">
-                <li>
-                    <span style="font-weight:bold;font-size:1.09em;">Quantum Supply-Chain Digital Twin</span>
-                    <a href="#" style="color:#1d4ed8;text-decoration:underline;font-size:0.98em;float:right;">Github</a><br>
-                    Developed a quantum-enhanced digital twin solution to simulate, visualize, and optimize modern retail supply chains under disruptions.<br>
-                    <span style="font-weight:bold;">Tech Stack:</span> Streamlit, RestAPI, FastAPI, Docker<br>
-                    <span style="font-weight:bold;">Role:</span> Contributor
-                </li>
-                <li>
-                    <span style="font-weight:bold;font-size:1.09em;">Restaurant Management System</span>
-                    <a href="#" style="color:#1d4ed8;text-decoration:underline;font-size:0.98em;float:right;">Github</a><br>
-                    Developed a comprehensive restaurant system to enhance customer and admin access and management.<br>
-                    <span style="font-weight:bold;">Tech Stack:</span> JavFX, JDBC, Oracle XE<br>
-                    <span style="font-weight:bold;">Role:</span> Contributor
-                </li>
-                 <li>
-                    <span style="font-weight:bold;font-size:1.09em;">Digital-Welfare-Companion</span>
-                    <a href="https://github.com/harshitha-shetty11/Digital_Welfare_Companion.git" style="color:#1d4ed8;text-decoration:underline;font-size:0.98em;float:right;">Github</a><br>
-                    A multilingual, voice-enabled web app built during the GydeXP Hack-A-Tone (IIT Delhi) to provide inclusive, accessible, and real-time guidance on government welfare schemes for all Indian citizens regardless of language or literacy..<br>
-                    <span style="font-weight:bold;">Tech Stack:</span> ReactJS,WebSpeech API,Semantic HTML,CSS,MongoDB<br>
-                    <span style="font-weight:bold;">Role:</span> Lead Developer
-                </li>
-                <li>
-                    <span style="font-weight:bold;font-size:1.09em;">MongoDB With Djnago</span>
-                    <a href="https://github.com/harshitha-shetty11/MongoDB_Django_Major_Project.git" style="color:#1d4ed8;text-decoration:underline;font-size:0.98em;float:right;">Github</a><br>
-                   An Application developed to access and handle data from MongoDB compass with Django and Viceversa.<br>
-                    <span style="font-weight:bold;">Tech Stack:</span> MongoDB,Django,Djongo,Python,HTML,CSS<br>
-                    <span style="font-weight:bold;">Role:</span> Contributor
-                </li>
+<div class="container">
+
+    <!-- Name & Contact -->
+    <h1 class="main-name">NAGA HARSHITHA GADAMSETTY</h1>
+    <div class="contact-block">
+        Phone: <a href="tel:9346004775">+91 9346004775</a>,
+        E-mail: <a href="mailto:harshushetty1206@gmail.com">harshushetty1206@gmail.com</a>
+    </div>
+    <div class="contact-links">
+        <a href="https://www.linkedin.com/in/harshitha-gadamshetty-b37966319">LinkedIn</a> |
+        <a href="https://github.com/harshitha-shetty11">GitHub</a>
+    </div>
+    <div class="contact-location">Andhra Pradesh, India</div>
+    <hr class="divider" />
+
+    <!-- Skills -->
+    <div class="section">
+        <h2>SKILLS</h2>
+        <div class="skills-grid">
+            <ul>
+                <li>Programming: <b>Python, Java, C</b></li>
+                <li>Web Technologies: <b>HTML, CSS, JavaScript</b></li>
+                <li>Frameworks & Tools: <b>Django, GitHub</b></li>
+                <li>Data Visualization: <b>Power BI</b></li>
             </ul>
-        </div>
-        <style>
-        .project-list-fixed {
-            list-style: disc inside;
-            padding-left: 0;
-            margin: 0;
-        }
-        .project-list-fixed li {
-            margin-bottom: 18px;
-        }
-        </style>
-        <hr class="divider" style="border: none; border-top: 2px solid #888; margin: 6px 0 18px 0;" />
-        <div class="section">
-            <h2>EDUCATION</h2>
-            <table class="edu-table">
-                <tr>
-                    <td><strong>B.Tech - Artificial Intelligence and Data Science</strong><br><span class="edu-school">Annamacharya Institute of Technology and Sciences</span></td>
-                    <td class="edu-year"><b>2022-2026</b></td>
-                    <td class="edu-score"><b>CGPA: 9.29</b></td>
-                </tr>
-                <tr>
-                    <td><strong>Intermediate</strong><br><span class="edu-school">Sri Chaitanya Junior College</span></td>
-                    <td class="edu-year"><b>2020-2022</b></td>
-                    <td class="edu-score"><b>94.4%</b></td>
-                </tr>
-                <tr>
-                    <td><strong>SSC</strong><br><span class="edu-school">Little Angels E.M High School</span></td>
-                    <td class="edu-year"><b>2019-2020</b></td>
-                    <td class="edu-score"><b>96%</b></td>
-                </tr>
-            </table>
-        </div>
-        <style>
-        .edu-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
-        .edu-table td { padding: 4px 8px; vertical-align: top; font-size: 1em; }
-        .edu-year, .edu-score { text-align: right; white-space: nowrap; color: #222; font-weight: 500; }
-        .edu-school { color: #444; font-size: 0.98em; }
-        </style>
-        <hr class="divider" style="border: none; border-top: 2px solid #888; margin: 6px 0 18px 0;" />
-        <div class="section cert-section">
-            <h2>CERTIFICATES</h2>
-            <ul class="cert-list">
-                <li><b>ServiceNow Certified System Administrator (CSA)</b> – Service Now [<a href="#">Link</a>]</li>
-                <li><b>Internship, Data Science</b> – IES, APSSDC [<a href="#">Link</a>]</li>
-                <li><b>Internship, Deep Learning</b> – Pantech [<a href="#">Link</a>]</li>     
-                <li><b>Data Fundamentals</b> – IBM SkillBuild [<a href="#">Link</a>]</li>
-                <li><b>Data Visualization PowerBI</b> – Vensy Technologies Pvt.ltd [<a href="https://drive.google.com/file/d/1XAdNNSaegRj9xWpgzIzTxJlMCw2nGiDw/view?usp=sharing">Link</a>]</li>
-                <li><b>Internship,MongoDB-With-Django</b> – Inversion Consultancy[<a href="https://drive.google.com/file/d/1aJavqR6oOR2NzUNrTehnpvP6iX-vj4tu/view?usp=drive_link">Link</a>]</li>
-                <li><b>Internship,AWS</b> – Inversion Consultancy [<a href="https://drive.google.com/file/d/1lc6OscCZo3SWUWQyMHCn1ZmowmGEOzQ6/view?usp=drive_link">Link</a>]</li>
-            </ul>
-        </div>
-        <style>
-        .cert-section { font-size: 0.97em; }
-        .cert-list { list-style: disc inside; margin-left: 0; padding-left: 18px; }
-        .cert-list li { margin-bottom: 5px; font-size: 0.97em; }
-        </style>
-        <hr class="divider" style="border: none; border-top: 2px solid #888; margin: 6px 0 18px 0;" />
-        <div class="section">
-            <h2>LANGUAGES</h2>
-            <ul class="lang-list">
-                <li>English, Hindi, Telugu</li>
+            <ul>
+                <li>Databases: <b>MySQL, MongoDB</b></li>
+                <li>Operating Systems: <b>Windows</b></li>
+                <li>Cloud Platforms: <b>AWS</b></li>
+                <li>Service Management: <b>ServiceNow</b></li>
             </ul>
         </div>
     </div>
+    <hr class="divider" />
+
+    <!-- Projects -->
+    <div class="section">
+        <h2>PROJECTS</h2>
+        <ul class="project-list-fixed">
+            <li>
+                <b>Quantum Supply-Chain Digital Twin</b> 
+                <a href="#" style="float:right;">GitHub</a><br>
+                Built a quantum-enhanced digital twin to simulate, visualize, and optimize retail supply chains under disruption.<br>
+                <b>Tech Stack:</b> Streamlit, REST API, FastAPI, Docker<br>
+                <b>Role:</b> Contributor
+            </li>
+            <li>
+                <b>Restaurant Management System</b> 
+                <a href="#" style="float:right;">GitHub</a><br>
+                Created a management system to streamline restaurant operations for both customers and administrators.<br>
+                <b>Tech Stack:</b> JavaFX, JDBC, Oracle XE<br>
+                <b>Role:</b> Contributor
+            </li>
+            <li>
+                <b>Digital Welfare Companion</b>
+                <a href="https://github.com/harshitha-shetty11/Digital_Welfare_Companion.git" style="float:right;">GitHub</a><br>
+                Developed a multilingual, voice-enabled web app to provide inclusive, real-time guidance on government welfare schemes.<br>
+                <b>Tech Stack:</b> ReactJS, WebSpeech API, HTML, CSS, MongoDB<br>
+                <b>Role:</b> Lead Developer
+            </li>
+            <li>
+                <b>MongoDB with Django</b>
+                <a href="https://github.com/harshitha-shetty11/MongoDB_Django_Major_Project.git" style="float:right;">GitHub</a><br>
+                Built an app for seamless data integration between MongoDB and Django.<br>
+                <b>Tech Stack:</b> MongoDB, Django, Djongo, Python, HTML, CSS<br>
+                <b>Role:</b> Contributor
+            </li>
+        </ul>
+    </div>
+    <hr class="divider" />
+
+    <!-- Education -->
+    <div class="section">
+        <h2>EDUCATION</h2>
+        <ul>
+            <li><b>B.Tech – Artificial Intelligence and Data Science</b>, Annamacharya Institute of Technology and Sciences (2022–2026), CGPA: 9.29</li>
+            <li><b>Intermediate</b>, Sri Chaitanya Junior College (2020–2022), 94.4%</li>
+            <li><b>SSC</b>, Little Angels E.M High School (2019–2020), 96%</li>
+        </ul>
+    </div>
+    <hr class="divider" />
+
+    <!-- Certificates -->
+    <div class="section cert-section">
+        <h2>CERTIFICATES</h2>
+        <ul class="cert-list">
+            <li><b>ServiceNow Certified System Administrator (CSA)</b> – ServiceNow [<a href="#">Link</a>]</li>
+            <li><b>Internship, Data Science</b> – IES, APSSDC [<a href="#">Link</a>]</li>
+            <li><b>Internship, Deep Learning</b> – Pantech [<a href="#">Link</a>]</li>
+            <li><b>Data Fundamentals</b> – IBM SkillBuild [<a href="#">Link</a>]</li>
+            <li><b>Data Visualization with Power BI</b> – Vensy Technologies [<a href="https://drive.google.com/file/d/1XAdNNSaegRj9xWpgzIzTxJlMCw2nGiDw/view?usp=sharing">Link</a>]</li>
+            <li><b>Internship, MongoDB with Django</b> – Inversion Consultancy [<a href="https://drive.google.com/file/d/1aJavqR6oOR2NzUNrTehnpvP6iX-vj4tu/view?usp=drive_link">Link</a>]</li>
+            <li><b>Internship, AWS</b> – Inversion Consultancy [<a href="https://drive.google.com/file/d/1lc6OscCZo3SWUWQyMHCn1ZmowmGEOzQ6/view?usp=drive_link">Link</a>]</li>
+        </ul>
+    </div>
+    <hr class="divider" />
+
+    <!-- Achievements -->
+    <div class="section achievements-section">
+        <h2>ACHIEVEMENTS</h2>
+        <ul class="achievement-list">
+            <li><b>8x Certified in Essay Writing Competition</b> – Annamacharya Institute Of Technology And Sciences</li>
+            <li><b>Winner, Paper Presentation</b> – Acquired top position in competition by Anti‑Ragging Society, AITS</li>
+            <li><b>Selected for Walmart Sparkathon 2025</b> – Part of DIGITAL DREAMERS team; developed ML‑powered demand forecasting and inventory optimization solution</li>
+            <li><b>Finalist, National‑Level Hackathon GydeXP</b> – Ranked in top 14 out of 1452 teams; built Digital‑Welfare‑Companion using AI, voice interaction, and regional language support</li>
+        </ul>
+    </div>
+    <hr class="divider" />
+
+    <!-- Languages -->
+    <div class="section">
+        <h2>LANGUAGES</h2>
+        <ul class="lang-list">
+            <li>English – Professional</li>
+            <li>Hindi – Intermediate</li>
+            <li>Telugu – Native</li>
+        </ul>
+    </div>
+
+</div>
 </body>
 </html>
-<style>
-.add-qual, .lang-list { list-style: disc inside; margin-left: 0; padding-left: 18px; }
-.add-qual li, .lang-list li { margin-bottom: 6px; font-size: 1em; }
-</style>
